@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="total.css">
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <!--    <h3 style="text-align:center" id="common">Participant's SignUp as New User!</h3><br>-->
+</head>
+<script>
+    function ValidateFun(){
+    var name=document.myform.Aname.value;
+    var email=document.myform.Anumber.value;
+    var number=document.myform.Anumber.value;
+    if(name==" " || name==null){
+        alert("Name can't be blank");
+        return false;
+        }
+        if(pass!=number.length!=10){
+        return false;
+        }
+        if(email.includes("@")){
+        return false;
+          }
+  }
+</script>
+<body>
+<div>
+    <center>
+        <h2>Contact Us</h2>
+        <form name="myform" onsubmit="return ValidateFun()">
+            <table border="1px solid">
+                Name:<br><br>
+                <input type="text" id="text" name="Aname" placeholder="UserName"><br><p>
+                EmailId:<br><br>
+                <input type="text" id="text" name="Aemail" placeholder="UserEmailId"><br><p>
+                Contact Number<br><br>
+                <input type="text" id="text" name="Anumber" placeholder="Contact Number"><br><p>
+                <label>Message</label>
+                <textarea name="Message" rows="5" cols="50"></textarea><br><br>
+<!--                Organization Name:<br><br>-->
+<!--                <input type="text" id="text" name="AOrganizationName" placeholder="Organization Name"><br><p>-->
+<!--                Designation:<br><br>-->
+<!--                <input type="text" id="text" name="ADesignation" placeholder="Designation"><br><p>-->
+<!--                Monthly Salary:<br><br>-->
+<!--                <input type="text" id="text" name="AMonthlySalary" placeholder="Monthly Salary"><br><p>-->
+                <input type="submit" id="sub" value="submit">
+            </p>
+            </table>
+        </form>
+    </center>
+</div>
+
+</body>
+</html>
